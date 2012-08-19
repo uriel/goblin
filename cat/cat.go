@@ -38,7 +38,7 @@ func main() {
 	flag.Usage = usage
 	flag.Parse()
 	args := flag.Args()
-	if(len(args) == 0) {
+	if len(args) == 0 {
 		cat(os.Stdin, "<stdin>")
 	} else {
 		for _, s := range args {
